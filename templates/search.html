@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+  <link rel="icon" href="http://obj-cache.cloud.ruanbekker.com/favicon.ico">
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <title>Bookmarks Search</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <div style="background:transparent !important" class="jumbotron">
+      <div style="font-family: 'Pacifico', cursive;">
+        <p>
+          <center>
+          <font size="8">Search for Blog Posts</font>
+          </center>
+        </p>
+      </div>
+    </div>
+
+    <form action="/result" method="post">
+      <div class="input-group">
+        <input type="text" id="user_input" class="form-control input-lg" name="input" placeholder="Search" autofocus>
+        <div class="input-group-btn">
+          <button class="btn btn-primary btn-lg" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <div class="query-result">
+    </div>
+
+
+    <br><br>
+      <footer class="footer">
+        <p>&copy; Dinesh Sonachalam </p>
+      </footer>
+
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+    $('#user_input').on('input',function(e){
+        var user_input = $('#user_input').val();
+
+        var settings = {
+              "async": true,
+              "crossDomain": true,
+              "url": "/",
+              "method": "POST",
+              "headers": {
+
+                "cache-control": "no-cache",
+                "Postman-Token": "81c3e2dd-e8d2-40ce-ab12-8a720bfb0fe2"
+              },
+              "processData": false,
+              data: "input=" + user_input
+            }
+
+            $.ajax(settings).done(function (response) {
+              console.log(response);
+              var obj = JSON.parse(response);
+              console.log("Object:",obj);
+              var data = obj.autocomplete;
+              console.log("Data:",data);
+              console.log(data.length);
+              title_data = data[0]["options"];
+              titles = []
+              for(var i=0;i<title_data.length;i++){
+                titles.push(title_data[i]["text"]);
+              }
+              console.log(titles);
+              $("#user_input").autocomplete({
+                 source: titles
+              });
+
+
+            });
+      });
+
+
+
+
+ </script>
+</html>
