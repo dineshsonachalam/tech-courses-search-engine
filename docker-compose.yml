@@ -1,0 +1,14 @@
+version: '3'
+services:
+  elasticsearch:
+    image: "elasticsearch:5"
+    networks:
+      - frontend
+    restart: always
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./ES_DATA:/usr/share/elasticsearch/data
+
+networks:
+  frontend:

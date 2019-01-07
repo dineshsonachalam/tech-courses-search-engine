@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import requests,json
+import requests,json,time
+from random import randint
 
 if __name__ == "__main__":
     count = 1
@@ -9,6 +10,7 @@ if __name__ == "__main__":
     soup_data = BeautifulSoup(html_content, 'lxml')
     urls = soup_data.findAll('a', attrs={'class': ' topic-grid-item js-topic-grid-item'})
     for data in urls:
+        time.sleep(randint(0, 4))
         # Get HTML content of the URL
         url = data.attrs["href"]
 
