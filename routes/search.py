@@ -14,9 +14,38 @@ headers = {
 @search_blueprint.route("/",methods=['GET','POST'],endpoint='index')
 def index():
     if request.method=='GET':
-        return render_template("search.html")
+        res ={
+	            'hits': {'total': 0, 'hits': []}
+             }
+        return render_template("index.html",res=res)
     elif request.method =='POST':
+        if request.method == 'POST':
+            print("-----------------Calling search Result----------")
+            search_term = request.form["input"]
+            print("Search Term:", search_term)
+            payload = {
+                "query": {
+                    "query_string": {
+                        "analyze_wildcard": True,
+                        "query": str(search_term),
+                        "fields": ["topic", "title", "url", "labels"]
+                    }
+                },
+                "size": 50,
+                "sort": [
 
+                ]
+            }
+            payload = json.dumps(payload)
+            url = "http://localhost:9200/hacker/tutorials/_search"
+            response = requests.request("GET", url, data=payload, headers=headers)
+            response_dict_data = json.loads(str(response.text))
+            return render_template('index.html', res=response_dict_data)
+
+
+@search_blueprint.route("/autocomplete",methods=['POST'],endpoint='autocomplete')
+def autocomplete():
+    if request.method == 'POST':
         search_term = request.form["input"]
         print("POST request called")
         print(search_term)
@@ -34,30 +63,6 @@ def index():
         response_dict_data = json.loads(str(response.text))
         return json.dumps(response_dict_data)
 
-@search_blueprint.route("/result",methods=['GET','POST'],endpoint='search_result')
-def search_result():
-    if request.method == 'POST':
-        print("-----------------Calling search Result----------")
-        search_term = request.form["input"]
-        print("Search Term:",search_term)
-        payload = {
-            "query": {
-                "multi_match": {
-                    "query": str(search_term),
-                    "fields": ["topic", "title", "url", "labels"]
-                }
-            },
-            "sort": [
-                {"upvote": {"order": "desc"}}
-            ]
-        }
-        payload = json.dumps(payload)
-        url = "http://localhost:9200/hacker/tutorials/_search"
-        response = requests.request("GET", url, data=payload, headers=headers)
-        response_dict_data = json.loads(str(response.text))
-        return render_template('results.html', res=response_dict_data )
 
 
-@search_blueprint.route("/test",methods=['GET','POST'],endpoint='test')
-def test():
-    return render_template("test.html")
+
