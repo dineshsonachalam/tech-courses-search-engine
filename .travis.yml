@@ -1,0 +1,12 @@
+sudo: required
+services:
+- docker
+
+
+before_install:
+- docker build -t dineshsonachalam/hacker:1.0.0 .
+script:
+    #log in to docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+    #take built images and push to Docker hub
+  - docker push dineshsonachalam/hacker:1.0.0

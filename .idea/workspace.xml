@@ -1,10 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e3d2e71-7195-4f9c-aacc-d0522d792d61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="e9ff4a41-fe57-4500-86b0-009d8130f5e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/index/segments_9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-2.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-2.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-3.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-3.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-4.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-4.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-5.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-5.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-6.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-6.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-7.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-7.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-8.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-8.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-9.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/_state/state-23.st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/index/segments_9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-2.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-2.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-3.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-3.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-4.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-4.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-5.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-5.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-6.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-6.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-7.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-7.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-8.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-8.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-9.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/index/segments_9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-2.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-2.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-3.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-3.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-4.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-4.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-5.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-5.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-6.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-6.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-7.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-7.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-8.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-8.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-9.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/index/segments_9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-2.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-2.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-3.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-3.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-4.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-4.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-5.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-5.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-6.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-6.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-7.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-7.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-8.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-8.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-9.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/index/segments_9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-2.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-2.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-3.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-3.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-4.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-4.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-5.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-5.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-6.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-6.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-7.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-7.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-8.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-8.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-9.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/index/segments_9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-2.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-2.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-3.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-3.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-4.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-4.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-5.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-5.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-6.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-6.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-7.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-7.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-8.ckp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-8.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-9.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/_state/state-40.st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/css/mixins/_text-hide.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/icomoon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/jquery.timepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/open-iconic-bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/backup.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/font/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/font/_flaticon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/font/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/font/flaticon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/flaticon/license/license.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/ionicons/css/_ionicons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/ionicons/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/ionicons/fonts/ionicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/open-iconic/open-iconic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/image_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/image_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/image_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/image_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/image_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/image_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/image_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/image_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/loc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/person_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/person_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/person_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/person_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/google-map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-migrate-3.0.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.animateNumber.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.easing.1.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.stellar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/range.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/scrollax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/prepros-6.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Building a search engine using Elasticsearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Building kickass search engine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/_state/global-10.st" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/_state/global-17.st" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/_state/node-1.st" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/_state/node-8.st" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/_state/state-0.st" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/_state/state-7.st" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/index/segments_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog-1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/_state/state-2.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/_state/state-0.st" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/_state/state-7.st" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/index/segments_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog-1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/_state/state-0.st" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/_state/state-7.st" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/index/segments_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog-1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/_state/state-0.st" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/_state/state-7.st" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/index/segments_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog-1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/_state/state-0.st" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/_state/state-7.st" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/index/segments_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog-1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/_state/state-0.st" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/_state/state-7.st" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/index/segments_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog-1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/_state/state-3.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_new_index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,25 +321,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scraper.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="90">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_new_index.py">
+        <entry file="file://$PROJECT_DIR$/routes/search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1111">
-              <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+            <state relative-caret-position="16">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3137">
+              <caret line="303" column="47" selection-start-line="303" selection-start-column="47" selection-end-line="303" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,11 +368,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -59,10 +383,15 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>post</find>
-      <find>autocomple</find>
-      <find>results</find>
+      <find>bg_</find>
+      <find>titles</find>
+      <find>jquery</find>
+      <find>jquery.com/ui</find>
       <find>autocomplete</find>
+      <find>/</find>
+      <find>title</find>
+      <find>hacker</find>
+      <find>form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -71,15 +400,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/create_new_index.sh" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/create_new_index.py" />
         <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/routes/search.py" />
-        <option value="$PROJECT_DIR$/templates/search.html" />
-        <option value="$PROJECT_DIR$/templates/results.html" />
-        <option value="$PROJECT_DIR$/scraper.py" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -95,24 +420,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Building a search engine using Elasticsearch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Building a search engine using Elasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="Building kickass search engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Building kickass search engine" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -126,9 +450,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scraper">
+  <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Building a search engine using Elasticsearch" />
+      <module name="Building kickass search engine" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -148,52 +472,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_new_index" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Building a search engine using Elasticsearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_new_index.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scraper" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Building a search engine using Elasticsearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scraper" />
-        <item itemvalue="Python.create_new_index" />
         <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
@@ -203,11 +483,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9e3d2e71-7195-4f9c-aacc-d0522d792d61" name="Default Changelist" comment="" />
-      <created>1546750247162</created>
+      <changelist id="e9ff4a41-fe57-4500-86b0-009d8130f5e3" name="Default Changelist" comment="" />
+      <created>1547288654229</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1546750247162</updated>
+      <updated>1547288654229</updated>
     </task>
     <servers />
   </component>
@@ -215,12 +495,12 @@
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329849" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24390244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -228,67 +508,17 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32868758" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32908458" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32908458" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/create_new_index.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/requests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1705#1711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/templates/test.html" />
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -300,30 +530,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_new_index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1111">
-          <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+        <state relative-caret-position="3137">
+          <caret line="303" column="47" selection-start-line="303" selection-start-column="47" selection-end-line="303" selection-end-column="47" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraper.py">
+    <entry file="file://$PROJECT_DIR$/routes/search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="16">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>
