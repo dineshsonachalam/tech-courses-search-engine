@@ -2,31 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ff4a41-fe57-4500-86b0-009d8130f5e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gunicorn_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/_state/global-20.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/_state/node-11.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/_state/state-10.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/index/segments_a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog.ckp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/_state/state-32.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/_state/state-10.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/index/segments_a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog.ckp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/_state/state-10.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/index/segments_a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog.ckp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/_state/state-10.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/index/segments_a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog.ckp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/_state/state-10.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/index/segments_a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog.ckp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/_state/state-10.st" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/index/segments_a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog.ckp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/_state/state-53.st" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="20" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -290,8 +265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="20" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

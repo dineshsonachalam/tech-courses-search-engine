@@ -7,9 +7,6 @@ services:
     restart: always
     volumes:
       - ./ES_DATA:/usr/share/elasticsearch/data
-    ports:
-      - "9200:9200"
-
 
   hacker:
     image: "dineshsonachalam/hacker:1.0.0"
