@@ -37,7 +37,7 @@ def index():
                 ]
             }
             payload = json.dumps(payload)
-            url = "http://localhost:9200/hacker/tutorials/_search"
+            url = "http://elasticsearch:9200/hacker/tutorials/_search"
             response = requests.request("GET", url, data=payload, headers=headers)
             response_dict_data = json.loads(str(response.text))
             return render_template('index.html', res=response_dict_data)
@@ -58,7 +58,7 @@ def autocomplete():
           }
         }
         payload = json.dumps(payload)
-        url="http://localhost:9200/autocomplete/_suggest"
+        url="http://elasticsearch:9200/autocomplete/_suggest"
         response = requests.request("GET", url, data=payload, headers=headers)
         response_dict_data = json.loads(str(response.text))
         return json.dumps(response_dict_data)
