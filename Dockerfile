@@ -21,4 +21,4 @@ ENV PATH /app:$PATH
 # It executes the command python app.py in the app directory.
 CMD ["gunicorn", "app:app", "-b", "0.0.0.0:8005"]
 
-EXPOSE 8004
+EXPOSE 8005
