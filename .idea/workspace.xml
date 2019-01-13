@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ff4a41-fe57-4500-86b0-009d8130f5e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/_state/global-17.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/_state/node-8.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/_state/state-7.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/index/segments_9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/0/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/f_vMjijnSPGWlctfOahjIQ/_state/state-23.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/_state/state-7.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/index/segments_9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/0/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/_state/state-7.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/index/segments_9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/1/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/_state/state-7.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/index/segments_9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/2/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/_state/state-7.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/index/segments_9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/3/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/_state/state-7.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/index/segments_9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/4/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES_DATA/nodes/0/indices/qO9iHtLNTLujNdJiaEAefQ/_state/state-40.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="406">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -36,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -56,18 +81,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3137">
-              <caret line="303" column="47" selection-start-line="303" selection-start-column="47" selection-end-line="303" selection-end-column="47" />
+            <state relative-caret-position="-2668">
+              <caret line="113" column="41" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -77,7 +98,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="15" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -103,6 +128,8 @@
       <find>form</find>
       <find>requests</find>
       <find>flask</find>
+      <find>hacker.io</find>
+      <find>localhost</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,11 +140,12 @@
       <list>
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/routes/search.py" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/routes/search.py" />
       </list>
     </option>
   </component>
@@ -133,18 +161,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Building kickass search engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Building kickass search engine" type="462c0819:PsiDirectoryNode" />
+              <item name="Final kickass search engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Final kickass search engine" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,7 +241,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24390244" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24390244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -221,7 +249,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32868758" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32868758" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32908458" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -230,33 +258,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/test.html" />
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3137">
-          <caret line="303" column="47" selection-start-line="303" selection-start-column="47" selection-end-line="303" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -264,8 +265,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2668">
+          <caret line="113" column="41" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -277,10 +288,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
