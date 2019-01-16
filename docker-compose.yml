@@ -7,6 +7,13 @@ services:
     restart: always
     volumes:
       - ./ES_DATA:/usr/share/elasticsearch/data
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock = true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    healthcheck:
+      test: ["CMD", "curl","-s" ,"-f", "http://localhost:9200/_cat/health"]
+      retries: 6
 
   hacker:
     image: "dineshsonachalam/hacker:1.0.0"
