@@ -22,7 +22,7 @@ services:
     restart: always
     ports:
       - "8005:8005"
-
+  
   nginx:
     image: "nginx"
     networks:
@@ -32,7 +32,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-
+  
 
 networks:
   frontend:
