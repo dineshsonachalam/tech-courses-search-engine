@@ -20,5 +20,5 @@ Now hit **localhost:8005** and you can see the application running.
 ![](https://cdn-images-1.medium.com/max/800/1*ZvovF3fIKf1sh045UgXARQ.png)
 
 
-
+**Medium Article:** https://medium.com/devopslinks/building-a-real-time-elastic-search-engine-using-python-32e05bcb9140
 
