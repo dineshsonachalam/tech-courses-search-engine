@@ -22,3 +22,17 @@ Now hit **localhost:8005** and you can see the application running.
 
 **Medium Article:** https://medium.com/devopslinks/building-a-real-time-elastic-search-engine-using-python-32e05bcb9140
 
+
+
+### Convert ES index data to output json
+```
+elasticdump \
+  --input=http://localhost:9200/hacker/tutorials \
+  --output=./tutorials.json \
+  --type=data
+ 
+elasticdump \
+  --input=http://localhost:9200/autocomplete/titles \
+  --output=./titles.json \
+  --type=data
+```
