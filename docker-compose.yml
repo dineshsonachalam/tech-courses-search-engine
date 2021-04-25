@@ -1,7 +1,7 @@
 version: '3'
-services:
+services:  
   elasticsearch:
-    image: "elasticsearch:5"
+    image: "docker.elastic.co/elasticsearch/elasticsearch:7.12.0"
     networks:
       - frontend
     restart: always
@@ -9,20 +9,33 @@ services:
       - ./ES_DATA:/usr/share/elasticsearch/data
     environment:
       - discovery.type=single-node
-      - bootstrap.memory_lock = true
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     healthcheck:
       test: ["CMD", "curl","-s" ,"-f", "http://localhost:9200/_cat/health"]
       retries: 6
-
-  hacker:
-    image: "dineshsonachalam/hacker:1.0.0"
+    
+  backend:
+    # build: ./backend
+    image: "dineshsonachalam/tech-courses-search-engine-backend:latest"
+    environment:
+      - PYTHONUNBUFFERED=1
     networks:
       - frontend
-    restart: always
     ports:
-      - "8005:8005"
-
+      - "8000:8000"
+    depends_on:
+      - elasticsearch
+         
+  frontend:
+    # build: ./frontend
+    image: "dineshsonachalam/tech-courses-search-engine-frontend:latest"
+    networks:
+      - frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
 
 networks:
   frontend:
+
+
