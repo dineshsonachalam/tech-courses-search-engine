@@ -2,6 +2,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from utils.filters import Search_filters
+from utils.elasticsearch import Elasticsearch
 
 app = FastAPI()
 
@@ -20,16 +21,23 @@ app.add_middleware(
 
 
 search = Search_filters()
+es = Elasticsearch()
 
 @app.get("/autocomplete")
 async def autocomplete(query: str = ""):
-    result = search.autocomplete(query=query)
-    return result
+    if(es.pre_condition_check()):
+        result = search.autocomplete(query=query)
+        return result
+    else:
+        return []
 
 @app.post("/string-query-search")
 async def string_query_seach(query: str = ""):
-    result = search.string_query_search(query=query)
-    return result
+    if(es.pre_condition_check()):
+        result = search.string_query_search(query=query)
+        return result
+    else:
+        return []
 
 
 if __name__ == "__main__":

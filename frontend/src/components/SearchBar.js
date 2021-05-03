@@ -11,7 +11,7 @@ class SearchBar extends React.Component {
       }
 
       async handleSearch(search_query){
-        let url = "http://localhost:8000/autocomplete?query="+search_query
+        let url = "https://api-search.dineshsonachalam.com/autocomplete?query="+search_query
         const results = await this.getData(url);
         this.props.updateAutoCompleteOptions(results);
       }

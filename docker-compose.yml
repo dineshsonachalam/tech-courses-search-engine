@@ -15,25 +15,25 @@ services:
       test: ["CMD", "curl","-s" ,"-f", "http://localhost:9200/_cat/health"]
       retries: 6
       
-  backend:
-    image: "dineshsonachalam/tech-courses-search-engine-backend:latest"
-    environment:
-      - PYTHONUNBUFFERED=1
-    networks:
-      - frontend
-    ports:
-      - "8085:8085"
-    depends_on:
-      - elasticsearch
+  # backend:
+  #   image: "dineshsonachalam/tech-courses-search-engine-backend:latest"
+  #   environment:
+  #     - PYTHONUNBUFFERED=1
+  #   networks:
+  #     - frontend
+  #   ports:
+  #     - "8085:8085"
+  #   depends_on:
+  #     - elasticsearch
          
-  frontend:
-    image: "dineshsonachalam/tech-courses-search-engine-frontend:latest"
-    networks:
-      - frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
+  # frontend:
+  #   image: "dineshsonachalam/tech-courses-search-engine-frontend:latest"
+  #   networks:
+  #     - frontend
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - backend
 
 networks:
   frontend:
