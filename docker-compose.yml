@@ -9,24 +9,24 @@ services:
       - ./ES_DATA:/usr/share/elasticsearch/data
     environment:
       - discovery.type=single-node
+    ports:
+      - "9200:9200"
     healthcheck:
       test: ["CMD", "curl","-s" ,"-f", "http://localhost:9200/_cat/health"]
       retries: 6
-    
+      
   backend:
-    # build: ./backend
     image: "dineshsonachalam/tech-courses-search-engine-backend:latest"
     environment:
       - PYTHONUNBUFFERED=1
     networks:
       - frontend
     ports:
-      - "8000:8000"
+      - "8085:8085"
     depends_on:
       - elasticsearch
          
   frontend:
-    # build: ./frontend
     image: "dineshsonachalam/tech-courses-search-engine-frontend:latest"
     networks:
       - frontend
