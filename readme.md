@@ -1,4 +1,4 @@
-### Dev environment:
+# Dev environment:
 
 1. Add the following domains to /etc/hosts that points to localhost.
 ```
@@ -37,7 +37,7 @@ docker-compose up
 
 5. Open the https://api-search.dineshsonachalam.com URL in firefox and allow use of self signed certificate.
 
-#### K8 deployment:
+# K8 deployment:
 
 1. Display list of contexts/clusters.
 ```
