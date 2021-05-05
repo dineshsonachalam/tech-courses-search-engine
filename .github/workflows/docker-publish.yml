@@ -18,8 +18,6 @@ jobs:
 
       - name: Build backend and frontend image
         run: |
-          pwd
-          ls
           docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-backend:latest -f backend.Dockerfile .
           docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-frontend:latest -f frontend.Dockerfile .  
 

@@ -7,12 +7,7 @@ WORKDIR /usr/src/app
 RUN npm init -y
 RUN npm i -s express
 
-
-RUN mkdir /usr/src/app/build
-COPY frontend/build /usr/src/app/build
-
-COPY frontend/server.js .
-
+COPY frontend .
 
 EXPOSE 3000
 CMD [ "node", "server.js" ]
