@@ -1,5 +1,4 @@
-![CI/CD](https://github.com/dineshsonachalam/tech-courses-search-engine/actions/workflows/docker-publish.yml/badge.svg)
-
+[![CI/CD status](https://github.com/dineshsonachalam/tech-courses-search-engine/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/dineshsonachalam/tech-courses-search-engine/actions)
 
 
 
@@ -333,9 +332,71 @@ dineshsonachalam@macbook ~ % curl --location --request DELETE 'http://127.0.0.1:
 {"acknowledged":true}%
 ```
 
-8. Let's deployment and service for our backend application.
+8. Let's create deployment and service for our backend application.
 ```
 dineshsonachalam@macbook tech-courses-search-engine % kubectl apply -f k8/backend.yaml -n=dinesh
-deployment.apps/tech-courses-search-engine-backend created
-service/tech-courses-search-engine-backend created
+deployment.apps/search-backend created
+service/search-backend created
+```
+(i) Pod is created successfully for our backend application.
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get pods -n=dinesh
+NAME                              READY   STATUS    RESTARTS   AGE
+es-0                              1/1     Running   0          22h
+search-backend-8647cdb658-6fgl2   1/1     Running   0          22m
+dineshsonachalam@macbook tech-courses-search-engine % kubectl logs search-backend-8647cdb658-6fgl2 -n=dinesh
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+```
+(ii) Deployment is created for our backend application. Here deployments are stateless group of containers (contains no volumes).
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get deployments -n=dinesh
+NAME             READY   UP-TO-DATE   AVAILABLE   AGE
+search-backend   1/1     1            1           24m
+```
+(iii) Created service for backend application.
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get services -n=dinesh
+NAME                                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+elasticsearch                        ClusterIP   10.245.43.67    <none>        9200/TCP   22h
+search-backend                       ClusterIP   10.245.65.56    <none>        8000/TCP   27m
+dineshsonachalam@macbook tech-courses-search-engine %
+```
+
+9. Let's create deployment and service for our frontend application.
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl apply -f k8/frontend.yaml -n=dinesh
+deployment.apps/search-frontend created
+service/search-frontend created
+```
+(i) Pod is created successfully for our frontend application.
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get pods -n=dinesh
+NAME                               READY   STATUS    RESTARTS   AGE
+es-0                               1/1     Running   0          22h
+search-backend-8647cdb658-6fgl2    1/1     Running   0          33m
+search-frontend-6f6876fc7f-6s59c   1/1     Running   0          47s
+```
+(ii) Deployment is successfully created for our frontend application.
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get deployments -n=dinesh
+NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+search-backend    1/1     1            1           35m
+search-frontend   1/1     1            1           3m20s
+```
+(iii) Created service for frontend application.
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get services -n=dinesh
+NAME              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+elasticsearch     ClusterIP   10.245.43.67   <none>        9200/TCP   22h
+search-backend    ClusterIP   10.245.65.56   <none>        8000/TCP   37m
+search-frontend   ClusterIP   10.245.15.91   <none>        3000/TCP   4m22s
+```
+10. Create ingress.
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl apply -f k8/ingress.yaml -n=dinesh
+ingress.networking.k8s.io/search-ingress created
+dineshsonachalam@macbook tech-courses-search-engine % 
 ```

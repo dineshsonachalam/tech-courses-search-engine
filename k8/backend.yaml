@@ -3,29 +3,32 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: tech-courses-search-engine-backend
-  name: tech-courses-search-engine-backend
+    app: search-backend
+  name: search-backend
   namespace: dinesh
 spec:  
   replicas: 1
   selector:
     matchLabels:
-      app: tech-courses-search-engine-backend
+      app: search-backend
   template:
     metadata:
       labels:
-        app: tech-courses-search-engine-backend
+        app: search-backend
     spec:
       containers:
-      - name: tech-courses-search-engine-backend
+      - name: search-backend
         image: dineshsonachalam/tech-courses-search-engine-backend:latest
-        imagePullPolicy: Always                        
+        imagePullPolicy: Always          
+        ports:
+        - containerPort: 8000   
+          name: search-backend   
 ---
 # 2. Service
 apiVersion: v1
 kind: Service
 metadata:
-  name: tech-courses-search-engine-backend
+  name: search-backend
   namespace: dinesh
 spec:
   ports:
@@ -33,4 +36,4 @@ spec:
       name: web
       port: 8000
   selector:
-    app: tech-courses-search-engine-backend
+    app: search-backend

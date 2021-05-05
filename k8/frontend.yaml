@@ -1,0 +1,39 @@
+# 1. Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: search-frontend
+  name: search-frontend
+  namespace: dinesh
+spec:  
+  replicas: 1
+  selector:
+    matchLabels:
+      app: search-frontend
+  template:
+    metadata:
+      labels:
+        app: search-frontend
+    spec:
+      containers:
+      - name: search-frontend
+        image: dineshsonachalam/tech-courses-search-engine-frontend:latest
+        imagePullPolicy: Always          
+        ports:
+        - containerPort: 3000   
+          name: search-frontend   
+---
+# 2. Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: search-frontend
+  namespace: dinesh
+spec:
+  ports:
+    - protocol: TCP
+      name: web
+      port: 3000
+  selector:
+    app: search-frontend
