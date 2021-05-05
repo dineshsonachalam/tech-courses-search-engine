@@ -1,3 +1,8 @@
+![CI/CD](https://github.com/dineshsonachalam/tech-courses-search-engine/actions/workflows/docker-publish.yml/badge.svg)
+
+
+
+
 # Dev environment:
 
 1. Add the following domains to /etc/hosts that points to localhost.
