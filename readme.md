@@ -394,3 +394,11 @@ search-backend    ClusterIP   10.245.65.56   <none>        8000/TCP   37m
 search-frontend   ClusterIP   10.245.15.91   <none>        3000/TCP   4m22s
 ```
 10. Now expose our services using ingress.
+
+
+### CI/CD Testing:
+1. To start the frontend and backend in the background.
+```
+npm run start --prefix frontend &
+python3 backend/main.py &
+```
