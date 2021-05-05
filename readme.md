@@ -328,5 +328,9 @@ dineshsonachalam@macbook ~ % curl --location --request DELETE 'http://127.0.0.1:
 {"acknowledged":true}%
 ```
 
-
-##### In-progress - Deployment for frontend and backend module.
+8. Let's deployment and service for our backend application.
+```
+dineshsonachalam@macbook tech-courses-search-engine % kubectl apply -f k8/backend.yaml -n=dinesh
+deployment.apps/tech-courses-search-engine-backend created
+service/tech-courses-search-engine-backend created
+```
