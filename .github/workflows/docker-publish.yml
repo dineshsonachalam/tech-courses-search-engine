@@ -9,24 +9,17 @@ on:
     tags:
       - latest
   
-  # Run tests for any PRs.
-  pull_request:
-
 jobs:
-  test:
-    runs-on: ubuntu-latest
-
   push:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build backend image
-        run: docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-backend:latest -f backend.Dockerfile .
-      
-      - name: Build frontend image
-        run: docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-frontend:latest -f frontend.Dockerfile .  
+      - name: Build backend and frontend image
+        run: |
+          docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-backend:latest -f backend.Dockerfile .
+          docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-frontend:latest -f frontend.Dockerfile .  
 
       - name: Log into registry
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
