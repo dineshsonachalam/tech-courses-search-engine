@@ -1,0 +1,42 @@
+name: Docker
+
+on:
+  push:
+    # Publish `master` as Docker `latest` image.
+    branches:
+      - master
+
+    tags:
+      - latest
+  
+  # Run tests for any PRs.
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+  push:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build backend image
+        run: docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-backend:latest -f backend.Dockerfile .
+      
+      - name: Build frontend image
+        run: docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-frontend:latest -f frontend.Dockerfile .  
+
+      - name: Log into registry
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Push image
+        run: |
+          docker push dineshsonachalam/tech-courses-search-engine-backend:latest
+          docker push dineshsonachalam/tech-courses-search-engine-frontend:latest
