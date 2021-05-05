@@ -394,9 +394,4 @@ elasticsearch     ClusterIP   10.245.43.67   <none>        9200/TCP   22h
 search-backend    ClusterIP   10.245.65.56   <none>        8000/TCP   37m
 search-frontend   ClusterIP   10.245.15.91   <none>        3000/TCP   4m22s
 ```
-10. Create ingress.
-```
-dineshsonachalam@macbook tech-courses-search-engine % kubectl apply -f k8/ingress.yaml -n=dinesh
-ingress.networking.k8s.io/search-ingress created
-dineshsonachalam@macbook tech-courses-search-engine % 
-```
+10. Now expose our services using ingress.
