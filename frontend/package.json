@@ -10,6 +10,7 @@
     "antd": "^4.15.2",
     "antd-mobile": "^2.3.4",
     "cypress": "^7.1.0",
+    "env-cmd": "^10.1.0",
     "lodash.throttle": "^4.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -22,8 +23,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "env-cmd -f .env.dev react-scripts start",
+    "build": "env-cmd -f .env.prod react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cypress": "cypress open"

@@ -22,7 +22,7 @@ class SearchResults extends React.Component {
 
   render() {
     if(this.props.search_query){
-      let url = "https://api-search.dineshsonachalam.com/string-query-search?query="+this.props.search_query;
+      let url = process.env.REACT_APP_API_ENDPOINT+"/string-query-search?query="+this.props.search_query;
       this.postData(url);
     }
     

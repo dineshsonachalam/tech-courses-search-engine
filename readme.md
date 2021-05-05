@@ -1,8 +1,7 @@
 [![CI/CD status](https://github.com/dineshsonachalam/tech-courses-search-engine/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/dineshsonachalam/tech-courses-search-engine/actions)
 
 
-
-# Dev environment:
+# Docker compose local deployment:
 
 1. Add the following domains to /etc/hosts that points to localhost.
 ```
