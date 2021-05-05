@@ -18,6 +18,8 @@ jobs:
 
       - name: Build backend and frontend image
         run: |
+          node -v
+          python3 -version
           npm i --prefix frontend
           npm run build --prefix frontend
           docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-backend:latest -f backend.Dockerfile .
