@@ -26,9 +26,10 @@ jobs:
           run: |
             python3 backend/main.py &
             npm run start --prefix frontend &
+            curl --location --request GET 'http://localhost:8000/autocomplete?query=kubernetes'
 
         - name: API testing
-          run: pytest backend
+          run: pytest backend -s
 
         - name: Cypress End to End testing
           uses: cypress-io/github-action@v2
