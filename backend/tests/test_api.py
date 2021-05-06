@@ -24,7 +24,6 @@ def test_autocomplete():
             "value": "Kubernetes in Action"
         }
     ]
-    print("Response: ", response)
     assert len(response) == len(expected_response)
     assert all([a == b for a, b in zip(response, expected_response)])
     print(all([a == b for a, b in zip(response, expected_response)]))
@@ -151,7 +150,6 @@ def test_string_query_search():
             "upvotes": 5
         }
     ]
-    print("Response: ", response)
     assert len(response) == len(expected_response)
     assert all([a == b for a, b in zip(response, expected_response)])
     print(all([a == b for a, b in zip(response, expected_response)]))
