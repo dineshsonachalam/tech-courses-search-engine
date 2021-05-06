@@ -26,7 +26,6 @@ jobs:
           run: |
             python3 backend/main.py &
             npm run start --prefix frontend &
-            curl --location --request GET 'http://0.0.0.0:8000/autocomplete?query=kubernetes'
 
         - name: API testing
           run: pytest backend -s
