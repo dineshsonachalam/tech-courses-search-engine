@@ -30,7 +30,7 @@ jobs:
         - name: Cypress End to End testing
           uses: cypress-io/github-action@v2
           with:
-            working-directory: e2e
+            working-directory: frontend
 
 
   upload-docker-image:
