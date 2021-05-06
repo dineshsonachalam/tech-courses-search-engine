@@ -400,8 +400,8 @@ search-frontend   ClusterIP   10.245.15.91   <none>        3000/TCP   4m22s
 1. To start the frontend and backend in the background.
 ```
 docker run -d -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.0
-
-
+npm run start --prefix frontend &
+python3 backend/main.py &
 ```
 
 

@@ -1,11 +1,16 @@
 describe("Search courses", () => {
     it('Load search page', () => {
         cy.visit("http://localhost:3000")
+        cy.wait(5000)
     })
+    
     it('Type the course', () => {
         cy.get('#rc_select_0').type('Python').type('{enter}')
+        cy.wait(5000)
     })
+    
     it('Compare search result', () => {
+        cy.wait(10000)
         let expected_courses = [
                         {
                             "title": "Google's Python Class",

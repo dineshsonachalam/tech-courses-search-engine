@@ -17,15 +17,16 @@ jobs:
         - name: Start the elasticsearch docker container
           run: docker run -d -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.0
 
-        - name: Install frontend and backend dependencies
+        - name: Install backend and frontend dependencies
           run: |
             pip3 install -r backend/requirements.txt
             npm i --prefix frontend
         
-        - name: Start the Backend and Frontend application in the background
+        - name: Start the backend and frontend application in the background
           run: |
             python3 backend/main.py &
             npm run start --prefix frontend &
+            curl --location --request GET '127.0.0.1:9200/_cat/health'
 
         - name: Cypress End to End testing
           uses: cypress-io/github-action@v2
