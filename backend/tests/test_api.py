@@ -24,128 +24,132 @@ def test_autocomplete():
             "value": "Kubernetes in Action"
         }
     ]
-    assert response == expected_response
+    assert len(response) == len(expected_response)
+    assert all([a == b for a, b in zip(response, expected_response)])
+    print(all([a == b for a, b in zip(response, expected_response)]))
 
 def test_string_query_search():
-    url = 'http://localhost:8000/string-query-search?query=Python' 
+    url = 'http://localhost:8000/string-query-search?query=react' 
     response = requests.request("POST", url, headers={}, data={}) 
     assert response.status_code == 200
     response = response.json()
     expected_response = [
-                                {
-                                    "id": 1,
-                                    "title": "Google's Python Class",
-                                    "topic": "Python",
-                                    "url": "https://developers.google.com/edu/python/",
-                                    "labels": [
-                                        "Free",
-                                        "Python 2"
-                                    ],
-                                    "upvotes": 213
-                                },
-                                {
-                                    "id": 2,
-                                    "title": "Complete Python Bootcamp",
-                                    "topic": "Python",
-                                    "url": "https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/complete-python-bootcamp",
-                                    "labels": [
-                                        "Paid",
-                                        "Video",
-                                        "Beginner",
-                                        "Python 3"
-                                    ],
-                                    "upvotes": 196
-                                },
-                                {
-                                    "id": 3,
-                                    "title": "Automate the Boring Stuff with Python",
-                                    "topic": "Python",
-                                    "url": "http://automatetheboringstuff.com/",
-                                    "labels": [
-                                        "Free",
-                                        "Book"
-                                    ],
-                                    "upvotes": 93
-                                },
-                                {
-                                    "id": 4,
-                                    "title": "Official Python Tutorial",
-                                    "topic": "Python",
-                                    "url": "https://docs.python.org/3/tutorial/index.html",
-                                    "labels": [
-                                        "Free"
-                                    ],
-                                    "upvotes": 74
-                                },
-                                {
-                                    "id": 5,
-                                    "title": "Working with Strings in Python",
-                                    "topic": "Python",
-                                    "url": "https://academy.vertabelo.com/course/python-strings",
-                                    "labels": [
-                                        "Free",
-                                        "Beginner",
-                                        "Python 3"
-                                    ],
-                                    "upvotes": 4
-                                },
-                                {
-                                    "id": 6,
-                                    "title": "Learn Python the Hard Way",
-                                    "topic": "Python",
-                                    "url": "https://learnpythonthehardway.org/book/",
-                                    "labels": [
-                                        "Paid",
-                                        "Book",
-                                        "Python 3"
-                                    ],
-                                    "upvotes": 293
-                                },
-                                {
-                                    "id": 7,
-                                    "title": "Python for Beginners - Learn Python Programming Language in 2 Hours",
-                                    "topic": "Python",
-                                    "url": "https://www.youtube.com/watch?v=yE9v9rt6ziw",
-                                    "labels": [
-                                        "Free",
-                                        "Video",
-                                        "Beginner",
-                                        "Python 3"
-                                    ],
-                                    "upvotes": 62
-                                },
-                                {
-                                    "id": 8,
-                                    "title": "Automate the Boring Stuff with Python",
-                                    "topic": "Python",
-                                    "url": "https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/automate/",
-                                    "labels": [
-                                        "Paid",
-                                        "Video",
-                                        "Beginner"
-                                    ],
-                                    "upvotes": 45
-                                },
-                                {
-                                    "id": 9,
-                                    "title": "Introduction to Programming with Python",
-                                    "topic": "Python",
-                                    "url": "https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360",
-                                    "labels": [
-                                        "Free",
-                                        "Video"
-                                    ],
-                                    "upvotes": 41
-                                },
-                                {
-                                    "id": 10,
-                                    "title": "A Byte of Python",
-                                    "topic": "Python",
-                                    "url": "http://www.swaroopch.com/notes/python/",
-                                    "labels": [
-                                        "Free"
-                                    ],
-                                    "upvotes": 22
-                                }
-     ]
-    assert response == expected_response
+        {
+            "id": 1,
+            "title": "React Crash Course 2018 - React Tutorial with Examples",
+            "topic": "React",
+            "url": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+            "labels": [
+                "Free",
+                "Video",
+                "Beginner"
+            ],
+            "upvotes": 78
+        },
+        {
+            "id": 2,
+            "title": "Awesome React",
+            "topic": "React",
+            "url": "https://github.com/enaqx/awesome-react",
+            "labels": [
+                "Free"
+            ],
+            "upvotes": 42
+        },
+        {
+            "id": 3,
+            "title": "The Complete React Web Developer Course (with Redux)",
+            "topic": "React",
+            "url": "https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/react-2nd-edition/",
+            "labels": [
+                "Paid",
+                "Video",
+                "Beginner"
+            ],
+            "upvotes": 30
+        },
+        {
+            "id": 4,
+            "title": "Modern React with Redux",
+            "topic": "React",
+            "url": "https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/react-redux/",
+            "labels": [
+                "Paid",
+                "Video",
+                "Beginner"
+            ],
+            "upvotes": 22
+        },
+        {
+            "id": 5,
+            "title": "Survive JavaScript - Webpack and React",
+            "topic": "React",
+            "url": "https://survivejs.com/react/introduction/",
+            "labels": [
+                "Free",
+                "Advanced"
+            ],
+            "upvotes": 19
+        },
+        {
+            "id": 6,
+            "title": "React for Beginners",
+            "topic": "React",
+            "url": "https://reactforbeginners.com",
+            "labels": [
+                "Paid",
+                "Video"
+            ],
+            "upvotes": 11
+        },
+        {
+            "id": 7,
+            "title": "The Beginner's Guide to ReactJS",
+            "topic": "React",
+            "url": "https://egghead.io/courses/the-beginner-s-guide-to-reactjs",
+            "labels": [
+                "Free",
+                "Video",
+                "Beginner"
+            ],
+            "upvotes": 9
+        },
+        {
+            "id": 8,
+            "title": "Become a Professional React Developer",
+            "topic": "React",
+            "url": "https://udacity.com/course/react-nanodegree--nd019/",
+            "labels": [
+                "Paid",
+                "Video",
+                "Beginner"
+            ],
+            "upvotes": 7
+        },
+        {
+            "id": 9,
+            "title": "Fullstack Advanced React and GraphQL",
+            "topic": "React",
+            "url": "https://advancedreact.com/",
+            "labels": [
+                "Paid",
+                "Advanced",
+                "GraphQL"
+            ],
+            "upvotes": 5
+        },
+        {
+            "id": 10,
+            "title": "Learn ReactJS by Codecademy",
+            "topic": "React",
+            "url": "https://www.codecademy.com/learn/react-101",
+            "labels": [
+                "Paid",
+                "Exercises/Practice-programs"
+            ],
+            "upvotes": 5
+        }
+    ]
+    assert len(response) == len(expected_response)
+    assert all([a == b for a, b in zip(response, expected_response)])
+    print(all([a == b for a, b in zip(response, expected_response)]))
