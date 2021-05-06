@@ -2,7 +2,7 @@ import requests
 import json
 
 def test_autocomplete():
-    url = 'http://localhost:8000/autocomplete?query=kubernetes'
+    url = 'http://0.0.0.0:8000/autocomplete?query=kubernetes'
     response = requests.request("GET", url, headers={}, data={})    
     assert response.status_code == 200
     response = response.json()
@@ -30,7 +30,7 @@ def test_autocomplete():
     print(all([a == b for a, b in zip(response, expected_response)]))
 
 def test_string_query_search():
-    url = 'http://localhost:8000/string-query-search?query=react' 
+    url = 'http://0.0.0.0:8000/string-query-search?query=react' 
     response = requests.request("POST", url, headers={}, data={}) 
     assert response.status_code == 200
     response = response.json()
