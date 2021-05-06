@@ -28,6 +28,9 @@ jobs:
             npm run start --prefix frontend &
             curl --location --request GET '127.0.0.1:9200/_cat/health'
 
+        - name: API testing
+          run: pytest backend
+
         - name: Cypress End to End testing
           uses: cypress-io/github-action@v2
           with:
