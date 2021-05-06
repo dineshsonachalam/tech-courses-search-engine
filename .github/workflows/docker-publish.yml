@@ -22,16 +22,18 @@ jobs:
           run: |
             pip3 install -r backend/requirements.txt
             npm i --prefix frontend
-        
-        - name: API testing
+        - name: Start backend and frontend applications in the background
           run: |
             python3 backend/main.py &
             sleep 10
+            
+        - name: API testing
+          run: |
+            npm run start --prefix frontend &
             pytest backend -s
 
         - name: Cypress End to End testing
           uses: cypress-io/github-action@v2
-          run: npm run start --prefix frontend &
           with:
             working-directory: frontend
 
