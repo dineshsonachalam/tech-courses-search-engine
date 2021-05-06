@@ -21,22 +21,14 @@ jobs:
       
       - name: Install Backend and Frontend Dependencies
         run: |
-        pip3 install -r backend/requirements.txt
-        npm i --prefix frontend
-      
-      - name: Start Backend and Frontend applications in the background
-        run: |
-        python3 backend/main.py &
-        npm run start --prefix frontend &
+          python3 backend/main.py &
+          npm run start --prefix frontend &
 
-      # - name: Start API testing
-      #   run: 
-  
       - name: Cypress End to End testing.
         uses: cypress-io/github-action@v2
         with:
           project: ./frontend
-
+          
       - name: Build backend and frontend image
         run: |
           npm run build --prefix frontend
