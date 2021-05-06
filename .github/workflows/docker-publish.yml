@@ -10,31 +10,42 @@ on:
       - latest
   
 jobs:
-  push:
+  integration-tests:
+      runs-on: ubuntu-latest
+      steps: 
+        - uses: actions/checkout@v2
+        - name: Start the elasticsearch docker container
+          run: docker run -d -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.0
+
+        - name: Install frontend and backend dependencies
+          run: |
+            pip3 install -r backend/requirements.txt
+            npm i --prefix frontend
+        
+        - name: Start the Backend and Frontend application in the background
+          run: |
+            python3 backend/main.py &
+            npm run start --prefix frontend &
+
+        - name: Cypress End to End testing
+          uses: cypress-io/github-action@v2
+          with:
+            project: ./frontend
+
+
+  upload-docker-image:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v2
-      
-      - name: Start Elasticsearch container
-        run: docker run -d -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.0
-      
-      - name: Install Backend and Frontend Dependencies
-        run: |
-          python3 backend/main.py &
-          npm run start --prefix frontend &
 
-      - name: Cypress End to End testing.
-        uses: cypress-io/github-action@v2
-        with:
-          project: ./frontend
-          
       - name: Build backend and frontend image
         run: |
+          npm i --prefix frontend
           npm run build --prefix frontend
           docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-backend:latest -f backend.Dockerfile .
-          docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-frontend:latest -f frontend.Dockerfile . 
-      
+          docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-frontend:latest -f frontend.Dockerfile .  
+
       - name: Log into registry
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
