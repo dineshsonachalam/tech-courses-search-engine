@@ -24,7 +24,7 @@ jobs:
         
         - name: API testing
           run: |
-            kill -9 `lsof -i:8000 -t
+            kill -9 `lsof -i:8000 -t`
             python3 backend/main.py &
             sleep 10
             pytest backend -s
