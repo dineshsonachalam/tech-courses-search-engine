@@ -37,7 +37,6 @@ jobs:
           with:
             working-directory: frontend
 
-
   upload-docker-image:
     needs: integration-tests
     runs-on: ubuntu-latest
@@ -59,3 +58,24 @@ jobs:
         run: |
           docker push dineshsonachalam/tech-courses-search-engine-backend:latest
           docker push dineshsonachalam/tech-courses-search-engine-frontend:latest
+
+  deploy-to-k8-cluster:
+    needs: upload-docker-image
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Deploy to Kubernetes cluster
+      uses: steebchen/kubectl@master
+      env:
+        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+      run: |
+        kubectl get deployments -n=dinesh
+      # with:
+      #   args: set image --record deployment/my-app container=${{ github.repository }}:${{ github.sha }}
+    # - name: verify deployment
+    #   uses: steebchen/kubectl@master
+    #   env:
+    #     KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+    #     KUBECTL_VERSION: "1.15"
+    #   with:
+    #     args: '"rollout status deployment/my-app"'
