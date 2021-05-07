@@ -10,57 +10,8 @@ on:
       - latest
   
 jobs:
-  integration-tests:
-      runs-on: ubuntu-latest
-      steps: 
-        - uses: actions/checkout@v2
-        - name: Start the elasticsearch docker container
-          run: |
-            docker run -d -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.0
-            echo "127.0.0.1 elasticsearch" | sudo tee -a /etc/hosts
-        - name: Install backend and frontend dependencies
-          run: |
-            pip3 install -r backend/requirements.txt
-            npm i --prefix frontend
-        - name: Start backend and frontend applications in the background
-          run: |
-            python3 backend/main.py &
-            sleep 10
-            
-        - name: API testing
-          run: |
-            npm run start --prefix frontend &
-            pytest backend -s
-
-        - name: Cypress End to End testing
-          uses: cypress-io/github-action@v2
-          with:
-            working-directory: frontend
-
-  upload-docker-image:
-    needs: integration-tests
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Build backend and frontend image
-        run: |
-          npm i --prefix frontend
-          npm run build --prefix frontend
-          docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-backend:latest -f backend.Dockerfile .
-          docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-frontend:latest -f frontend.Dockerfile .  
-
-      - name: Log into registry
-        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-
-      - name: Push image
-        run: |
-          docker push dineshsonachalam/tech-courses-search-engine-backend:latest
-          docker push dineshsonachalam/tech-courses-search-engine-frontend:latest
-
   deploy-to-k8-cluster:
-    needs: upload-docker-image
+    # needs: upload-docker-image
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -72,6 +23,57 @@ jobs:
         args: |
           get deployments -n=dinesh
           get pods -n=dinesh
+
+  # integration-tests:
+  #     runs-on: ubuntu-latest
+  #     steps: 
+  #       - uses: actions/checkout@v2
+  #       - name: Start the elasticsearch docker container
+  #         run: |
+  #           docker run -d -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.0
+  #           echo "127.0.0.1 elasticsearch" | sudo tee -a /etc/hosts
+  #       - name: Install backend and frontend dependencies
+  #         run: |
+  #           pip3 install -r backend/requirements.txt
+  #           npm i --prefix frontend
+  #       - name: Start backend and frontend applications in the background
+  #         run: |
+  #           python3 backend/main.py &
+  #           sleep 10
+            
+  #       - name: API testing
+  #         run: |
+  #           npm run start --prefix frontend &
+  #           pytest backend -s
+
+  #       - name: Cypress End to End testing
+  #         uses: cypress-io/github-action@v2
+  #         with:
+  #           working-directory: frontend
+
+  # upload-docker-image:
+  #   needs: integration-tests
+  #   runs-on: ubuntu-latest
+  #   if: github.event_name == 'push'
+  #   steps:
+  #     - uses: actions/checkout@v2
+
+  #     - name: Build backend and frontend image
+  #       run: |
+  #         npm i --prefix frontend
+  #         npm run build --prefix frontend
+  #         docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-backend:latest -f backend.Dockerfile .
+  #         docker build --no-cache -t dineshsonachalam/tech-courses-search-engine-frontend:latest -f frontend.Dockerfile .  
+
+  #     - name: Log into registry
+  #       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+  #     - name: Push image
+  #       run: |
+  #         docker push dineshsonachalam/tech-courses-search-engine-backend:latest
+  #         docker push dineshsonachalam/tech-courses-search-engine-frontend:latest
+
+
     # - name: verify deployment
     #   uses: steebchen/kubectl@master
     #   env:
