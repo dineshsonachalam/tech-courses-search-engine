@@ -63,17 +63,15 @@ jobs:
     needs: upload-docker-image
     runs-on: ubuntu-latest
     steps:
-    - uses: | 
-        actions/checkout@master
-        steebchen/kubectl@master
-    - env:
-        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
-    
+    - uses: actions/checkout@master
     - name: Deploy to Kubernetes cluster
-      run: |
-        kubectl get deployments -n=dinesh
-      # with:
-      #   args: set image --record deployment/my-app container=${{ github.repository }}:${{ github.sha }}
+      uses: steebchen/kubectl@master
+      env:
+        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+      with:
+        args: |
+          get deployments -n=dinesh
+          get pods -n=dinesh
     # - name: verify deployment
     #   uses: steebchen/kubectl@master
     #   env:

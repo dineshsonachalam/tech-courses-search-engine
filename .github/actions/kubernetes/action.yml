@@ -1,0 +1,8 @@
+name: "Determine composer cache directory"
+
+description: "Determines the composer cache directory and exports it as COMPOSER_CACHE_DIR environment variable"
+
+runs:
+  using: "composite"
+  - uses: actions/checkout@v2
+  
