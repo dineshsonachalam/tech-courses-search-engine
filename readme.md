@@ -21,7 +21,8 @@ https://user-images.githubusercontent.com/12673979/117389661-507f8400-af0a-11eb-
 - [How to deploy containers to Kubernetes cluster?](#how-to-use-it)
 
 ## What is it?
-![tech-search-engine-architecture](https://user-images.githubusercontent.com/12673979/117517327-55e7d780-afb9-11eb-8e1d-20da50316153.png)
+![tech-search-engine-architecture](https://user-images.githubusercontent.com/12673979/117518002-c0017c00-afbb-11eb-97f3-14c253cad321.png)
+
 
 
 ## Developer guidelines
