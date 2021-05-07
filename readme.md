@@ -1,4 +1,4 @@
-[![CI/CD status](https://github.com/dineshsonachalam/tech-courses-search-engine/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/dineshsonachalam/tech-courses-search-engine/actions)
+[![CI/CD status](https://github.com/dineshsonachalam/tech-courses-search-engine/actions/workflows/k8-deploy.yml/badge.svg)](https://github.com/dineshsonachalam/tech-courses-search-engine/actions)
 
 
 # Docker compose local deployment:
