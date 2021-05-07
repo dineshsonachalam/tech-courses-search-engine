@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Values.appName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.appName }} 
+  serviceName: {{ .Values.appName }}
+  replicas: {{ .Values.replicas }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }} # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      initContainers:
+      - name: init-sysctl
+        image: busybox
+        imagePullPolicy: IfNotPresent
+        command: ["/bin/sh","-c"]
+        args: ["sysctl -w vm.max_map_count=262144; chown -R 1000:1000 {{ .Values.volumeMountsPath }}"]
+        securityContext:
+          privileged: true
+        volumeMounts:
+          - name: {{ .Values.volumeMountsName }}
+            mountPath: {{ .Values.volumeMountsPath }}
+      containers:
+      - name: {{ .Values.appName }}
+        image: {{ .Values.image }}
+        env:
+        - name: discovery.type
+          value: "single-node"
+        ports:
+        - containerPort: {{ .Values.containerPort }}
+          name: {{ .Values.appName }}
+        volumeMounts:
+        - name: {{ .Values.volumeMountsName }}
+          mountPath: {{ .Values.volumeMountsPath }}
+  volumeClaimTemplates:
+  - metadata:
+      name: {{ .Values.volumeMountsName }}
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 5Gi
+

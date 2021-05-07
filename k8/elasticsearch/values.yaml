@@ -1,0 +1,9 @@
+namespace: dinesh
+image: docker.elastic.co/elasticsearch/elasticsearch:7.12.0
+containerPort: 9200
+appName: elasticsearch
+volumeMountsName: elasticsearch-data
+volumeMountsPath: /usr/share/elasticsearch/data
+replicas: 1
+
+

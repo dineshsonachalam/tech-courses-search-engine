@@ -1,0 +1,6 @@
+apiVersion: v2
+appVersion: "1.0"
+description: Helm chart for backend application
+name: search-backend
+owner: dineshsonachalam
+version: 0.1.0

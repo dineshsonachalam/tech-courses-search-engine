@@ -1,0 +1,9 @@
+namespace: dinesh
+image: dineshsonachalam/tech-courses-search-engine-frontend:latest
+containerPort: 3000   
+appName: search-frontend
+replicas: 1
+ingressRoute: (Host(`search.dineshsonachalam.com`))
+
+
+
