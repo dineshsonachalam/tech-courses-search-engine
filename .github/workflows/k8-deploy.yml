@@ -63,11 +63,13 @@ jobs:
     needs: upload-docker-image
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Deploy to Kubernetes cluster
-      uses: steebchen/kubectl@master
-      env:
+    - uses: | 
+        actions/checkout@master
+        steebchen/kubectl@master
+    - env:
         KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+    
+    - name: Deploy to Kubernetes cluster
       run: |
         kubectl get deployments -n=dinesh
       # with:
