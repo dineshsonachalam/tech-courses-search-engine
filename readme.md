@@ -27,76 +27,35 @@ https://user-images.githubusercontent.com/12673979/117389661-507f8400-af0a-11eb-
 ## How to deploy containers to Kubernetes cluster?
 
 
+#### Helm install:
 ```
-helm install elasticsearch ./k8/elasticsearch
-helm install search-backend ./k8/search-backend
-helm install search-frontend ./k8/search-frontend
-
-
-dineshsonachalam@macbook tech-courses-search-engine % helm install elasticsearch ./k8/elasticsearch
-NAME: elasticsearch
-LAST DEPLOYED: Fri May  7 19:23:10 2021
-NAMESPACE: kube-system
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-
-dineshsonachalam@macbook tech-courses-search-engine % helm install search-backend ./k8/search-backend
-NAME: search-backend
-LAST DEPLOYED: Fri May  7 19:24:08 2021
-NAMESPACE: kube-system
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-
-dineshsonachalam@macbook tech-courses-search-engine % helm install search-frontend ./k8/search-frontend
-NAME: search-frontend
-LAST DEPLOYED: Fri May  7 19:24:18 2021
-NAMESPACE: kube-system
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-
-
-
-
-
-
-
-
-
-
-
-dineshsonachalam@macbook ~ % kubectl get deployments -n=dinesh
+dineshsonachalam@macbook tech-courses-search-engine % helm list
+NAME              	NAMESPACE  	REVISION	UPDATED                             	STATUS  	CHART                           	APP VERSION
+tech-search-engine	kube-system	1       	2021-05-08 09:04:54.806979 +0530 IST	deployed	tech-courses-search-engine-0.1.0	1.0
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get deployments -n=dinesh
 NAME              READY   UP-TO-DATE   AVAILABLE   AGE
-search-backend    1/1     1            1           58s
-search-frontend   1/1     1            1           41s
-
-dineshsonachalam@macbook ~ % kubectl get statefulsets -n=dinesh
+search-backend    1/1     1            1           25s
+search-frontend   1/1     1            1           25s
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get pods -n=dinesh
+NAME                               READY   STATUS    RESTARTS   AGE
+elasticsearch-0                    1/1     Running   0          35s
+search-backend-8647cdb658-cszl4    1/1     Running   0          35s
+search-frontend-6f6876fc7f-fmnkk   1/1     Running   0          35s
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get sts -n=dinesh
 NAME            READY   AGE
-elasticsearch   1/1     114s
-dineshsonachalam@macbook ~ %
+elasticsearch   1/1     42s
+dineshsonachalam@macbook tech-courses-search-engine % kubectl get svc -n=dinesh
+NAME              TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+elasticsearch     ClusterIP   10.245.213.240   <none>        9200/TCP   49s
+search-backend    ClusterIP   10.245.33.10     <none>        8000/TCP   49s
+search-frontend   ClusterIP   10.245.254.139   <none>        3000/TCP   49s
+dineshsonachalam@macbook tech-courses-search-engine %
 ```
 
+#### Useful helm commands:
 ```
-dineshsonachalam@macbook ~ % helm list
-NAME           	NAMESPACE  	REVISION	UPDATED                             	STATUS  	CHART                	APP VERSION
-elasticsearch  	kube-system	1       	2021-05-07 19:01:23.393557 +0530 IST	deployed	elasticsearch-0.1.0  	1.0
-search-backend 	kube-system	1       	2021-05-07 19:01:48.866657 +0530 IST	deployed	search-backend-0.1.0 	1.0
-search-frontend	kube-system	1       	2021-05-07 19:02:06.762722 +0530 IST	deployed	search-frontend-0.1.0	1.0
-dineshsonachalam@macbook ~ %
-```
-
-
-Helm generated template:
-```
-helm template elasticsearch elasticsearch
-```
-
 # uninstall a release
 
 dineshsonachalam@macbook ~ % helm uninstall elasticsearch
-
 release "elasticsearch" uninstalled
-dineshsonachalam@macbook ~ %
-dineshsonachalam@macbook ~ % helm uninstall search-backend
+```
