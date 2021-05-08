@@ -25,16 +25,6 @@ services:
       - "8000:8000"
     depends_on:
       - elasticsearch
-         
-  frontend:
-    image: "dineshsonachalam/tech-courses-search-engine-frontend:latest"
-    networks:
-      - frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
-
 networks:
   frontend:
 
