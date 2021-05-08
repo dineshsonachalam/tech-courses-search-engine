@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 ES_DATA/
 .ES_DATA/
+.DS_Store
 # C extensions
 *.so
 
