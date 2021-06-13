@@ -1,4 +1,13 @@
-# Tech courses search engine using ES, Python, React, Redux, Kubernetes, Cypress E2E, Pytest and Github CI/CD:
+<p align="center">
+  <img src="https://i.imgur.com/j0ZQqwV.png" alt="SearchEngine">
+</p>
+<p align="center">
+    <em>Powered by ES, Python, React, Redux, Kubernetes, Cypress E2E, Pytest and Github CI/CD</em>
+</p>
+<p align="center">
+
+
+
 
 <p>
   <a href="https://github.com/dineshsonachalam/tech-courses-search-engine/actions" alt="CI/CD status">
