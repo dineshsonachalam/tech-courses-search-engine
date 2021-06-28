@@ -7,7 +7,8 @@ ES_DATA/
 .DS_Store
 # C extensions
 *.so
-
+package-lock.json
+frontend/package-lock.json
 # Distribution / packaging
 .Python
 build/
