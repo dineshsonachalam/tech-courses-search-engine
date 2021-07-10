@@ -31,9 +31,10 @@ jobs:
             pytest backend -s
 
         - name: Cypress End to End testing
-          uses: cypress-io/github-action@v2
-          with:
-            working-directory: frontend
+          run: |
+            cd frontend
+            sudo npm install -g --unsafe-perm=true --allow-root cypress
+            sudo cypress run --headless --browser chrome
 
   upload-docker-image:
     needs: integration-tests
@@ -62,32 +63,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Backend deployment rolling restart to fetch recently build docker image from docker hub.
-      uses: steebchen/kubectl@master
-      env:
-        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+    - uses: danielr1996/kubectl-action@1.0.0
+      name: Backend deployment rolling restart to fetch recently build docker image from docker hub.
       with:
+        kubeconfig: ${{ secrets.KUBE_CONFIG_DATA }}
         args: rollout restart deployment search-backend -n=dinesh
-
-    - name: Verify deployment for Backend app
-      uses: steebchen/kubectl@master
-      env:
-        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
-        KUBECTL_VERSION: "1.15"
+    
+    - uses: danielr1996/kubectl-action@1.0.0
+      name: Verify deployment for backend app
       with:
+        kubeconfig: ${{ secrets.KUBE_CONFIG_DATA }}
         args: rollout status deployment/search-backend -n=dinesh
 
-    - name: Frontend deployment rolling restart to fetch recently build docker image from docker hub.
-      uses: steebchen/kubectl@master
-      env:
-        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+    - uses: danielr1996/kubectl-action@1.0.0
+      name: Frontend deployment rolling restart to fetch recently build docker image from docker hub.
       with:
+        kubeconfig: ${{ secrets.KUBE_CONFIG_DATA }}
         args: rollout restart deployment search-frontend -n=dinesh
-
-    - name: Verify deployment for Frontend app
-      uses: steebchen/kubectl@master
-      env:
-        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
-        KUBECTL_VERSION: "1.15"
+    
+    - uses: danielr1996/kubectl-action@1.0.0
+      name: Verify deployment for frontend app
       with:
+        kubeconfig: ${{ secrets.KUBE_CONFIG_DATA }}
         args: rollout status deployment/search-frontend -n=dinesh
