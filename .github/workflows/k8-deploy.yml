@@ -63,6 +63,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    
     - uses: danielr1996/kubectl-action@1.0.0
       name: Backend deployment rolling restart to fetch recently build docker image from docker hub.
       with:
