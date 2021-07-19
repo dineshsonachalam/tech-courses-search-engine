@@ -7,6 +7,9 @@
 <p align="center">
 
 <p  align="center">
+  <a href="https://www.codacy.com/gh/dineshsonachalam/tech-courses-search-engine/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dineshsonachalam/tech-courses-search-engine&amp;utm_campaign=Badge_Grade">
+        <img src="https://app.codacy.com/project/badge/Grade/978c48d5a7ae4b28a1b17df88b6f1d0e"/>
+  </a>
   <a href="https://github.com/dineshsonachalam/tech-courses-search-engine/actions" alt="CI/CD status">
       <img src="https://github.com/dineshsonachalam/tech-courses-search-engine/actions/workflows/k8-deploy.yml/badge.svg" />
   </a>
