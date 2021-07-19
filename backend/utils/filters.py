@@ -66,9 +66,3 @@ class SearchFilters:
                 })
                 search_id += 1
         return tutorials
-
-
-    
-
-
-

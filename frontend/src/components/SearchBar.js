@@ -17,8 +17,8 @@ class SearchBar extends React.Component {
       }
       
       onSelect = (value) => {
-        this.props.updateAutoCompleteOptions([])
-        this.props.updateSearchQuery(value)
+        this.props.updateAutoCompleteOptions([]);
+        this.props.updateSearchQuery(value);
       };      
       
       handleKeyDown = (event) => {

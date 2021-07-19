@@ -80,7 +80,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     updateSearchQuery: (search_query) => dispatch(updateSearchQuery(search_query)),
     updateSearchResults: (search_results) => dispatch(updateSearchResults(search_results))
-  }
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchResults);
