@@ -5,6 +5,10 @@
     <em>Powered by ES, Python, React, Redux, Kubernetes, Cypress E2E, Pytest and Github CI/CD</em>
 </p>
 <p align="center">
+    <a href="https://sonarcloud.io/dashboard?id=tech-courses-search-engine">
+        <img src="https://sonarcloud.io/api/project_badges/quality_gate?project=tech-courses-search-engine"/>
+    </a>
+</p>
 
 <p  align="center">
   <a href="https://www.codacy.com/gh/dineshsonachalam/tech-courses-search-engine/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dineshsonachalam/tech-courses-search-engine&amp;utm_campaign=Badge_Grade">
