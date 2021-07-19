@@ -13,7 +13,7 @@ class Elasticsearch:
         self.headers = {
                     'Content-Type': 'application/json'
         }
-    
+
     def es_healthcheck(self):
         try:
             response = requests.request("GET", self.cluster_health_url, headers={}, data={})
