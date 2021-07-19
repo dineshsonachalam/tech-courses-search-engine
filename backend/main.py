@@ -1,8 +1,8 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from utils.filters import Search_filters
+from utils.filters import SearchFilters
 from utils.elasticsearch import Elasticsearch
 
 app = FastAPI()
@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 
-search = Search_filters()
+search = SearchFilters()
 es = Elasticsearch()
 
 @app.get("/autocomplete")

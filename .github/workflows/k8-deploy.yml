@@ -2,10 +2,8 @@ name: integration-tests
 
 on:
   push:
-    branches:
-      - master
-  pull_request:
-    types: [opened, synchronize, reopened]
+    branches:    
+      - '**'  # matches every branch
 
 jobs:
 #   sonarcloud:
@@ -25,6 +23,9 @@ jobs:
       runs-on: ubuntu-latest
       steps: 
         - uses: actions/checkout@v2
+          with:
+            fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+  
         - name: Start the elasticsearch docker container
           run: |
             docker run -d -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.0
@@ -41,13 +42,19 @@ jobs:
         - name: API testing
           run: |
             npm run start --prefix frontend &
-            pytest backend -s
+            pytest backend --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml
 
         - name: Cypress End to End testing
           run: |
             cd frontend
             sudo npm install -g --unsafe-perm=true --allow-root cypress
             sudo cypress run --headless --browser chrome
+
+        - name: SonarCloud Scan
+          uses: SonarSource/sonarcloud-github-action@master
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   upload-docker-image:
     needs: integration-tests

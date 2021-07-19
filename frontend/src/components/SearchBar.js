@@ -1,7 +1,7 @@
-import React from 'react';
-import { Input, AutoComplete } from 'antd';
+import React from "react";
+import { Input, AutoComplete } from "antd";
 import { updateAutoCompleteOptions, updateSearchQuery } from "../redux/actions";
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
 class SearchBar extends React.Component {
 
@@ -22,7 +22,7 @@ class SearchBar extends React.Component {
       };      
       
       handleKeyDown = (event) => {
-        if (event.key === 'Enter') {
+        if (event.key === "Enter") {
             this.props.updateSearchQuery(event.target.value);
           }
       }
@@ -49,14 +49,14 @@ class SearchBar extends React.Component {
 // https://stackoverflow.com/a/50225424
 const mapStateToProps = (state) => {
   return state.searchReducer;
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
     updateAutoCompleteOptions: (autocomplete_options) => dispatch(updateAutoCompleteOptions(autocomplete_options)),
     updateSearchQuery: (search_query) => dispatch(updateSearchQuery(search_query))
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
 

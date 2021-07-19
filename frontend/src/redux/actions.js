@@ -2,7 +2,7 @@
 
 import { UPDATE_AUTOCOMPLETE_OPTIONS,
          UPDATE_SEARCH_QUERY,
-         UPDATE_SEARCH_RESULTS} from './actionTypes';
+         UPDATE_SEARCH_RESULTS} from "./actionTypes";
 
 export const updateAutoCompleteOptions = (autocomplete_options) => {
     return {
@@ -11,7 +11,7 @@ export const updateAutoCompleteOptions = (autocomplete_options) => {
                 autocomplete_options: autocomplete_options
               }
     }
-}
+};
 
 export const updateSearchQuery = (search_query) => {
   return {
@@ -20,7 +20,7 @@ export const updateSearchQuery = (search_query) => {
               search_query: search_query
             }
   }
-}
+};
 
 export const updateSearchResults = (search_results) => {
   return {
@@ -29,5 +29,5 @@ export const updateSearchResults = (search_results) => {
               search_results: search_results
             }
   }
-}
+};
 

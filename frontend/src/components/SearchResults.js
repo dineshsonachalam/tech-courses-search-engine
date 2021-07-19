@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import { updateSearchResults, updateSearchQuery } from "../redux/actions";
-import { List, Space, Tag } from 'antd';
-import { LikeOutlined,  TagOutlined } from '@ant-design/icons';
-import { connect } from 'react-redux';
+import { List, Space, Tag } from "antd";
+import { LikeOutlined,  TagOutlined } from "@ant-design/icons";
+import { connect } from "react-redux";
 
 class SearchResults extends React.Component {
   postData(url) {
     const requestOptions = {
-      method: 'POST'
+      method: "POST"
     };
     fetch(url, requestOptions).then(response => 
       response.json().then(data => ({
@@ -74,14 +74,14 @@ class SearchResults extends React.Component {
 // https://stackoverflow.com/a/50225424
 const mapStateToProps = (state) => {
   return state.searchReducer;
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
     updateSearchQuery: (search_query) => dispatch(updateSearchQuery(search_query)),
     updateSearchResults: (search_results) => dispatch(updateSearchResults(search_results))
   }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchResults);
 

@@ -1,5 +1,4 @@
 import requests
-import json
 
 def test_autocomplete():
     url = 'http://0.0.0.0:8000/autocomplete?query=kubernetes'

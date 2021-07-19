@@ -1,6 +1,6 @@
 import requests
 import json
-class Search_filters:
+class SearchFilters:
     def __init__(self):
         self.url = "http://elasticsearch:9200/cs.stanford/_search"
         self.headers = {
@@ -24,15 +24,15 @@ class Search_filters:
         if response.status_code == 200:
             response  = json.loads(response.text)
             options = response["suggest"]["tutorial-suggest"][0]["options"]
-            id = 1
+            search_id = 1
             for option in options:
                 titles.append(
                     {
-                        "id": id,
+                        "id": search_id,
                         "value": option["text"]
                     }
                 )
-                id+=1
+                search_id+=1
         return titles
 
     def string_query_search(self, query):
@@ -52,19 +52,19 @@ class Search_filters:
         if response.status_code == 200:
             response  = json.loads(response.text)
             hits = response["hits"]["hits"]
-            id = 1
+            search_id = 1
             for item in hits:
                 labels = item["_source"]["labels"]
                 labels = eval(labels)
                 tutorials.append({
-                    "id": id,
+                    "id": search_id,
                     "title": item["_source"]["title"]["input"],
                     "topic": item["_source"]["topic"],
                     "url": item["_source"]["url"],
                     "labels": labels,
                     "upvotes": item["_source"]["upvotes"]
                 })
-                id = id + 1
+                search_id += 1
         return tutorials
 
 

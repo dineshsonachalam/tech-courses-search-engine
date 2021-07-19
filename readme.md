@@ -6,9 +6,6 @@
 </p>
 <p align="center">
 
-
-
-
 <p  align="center">
   <a href="https://github.com/dineshsonachalam/tech-courses-search-engine/actions" alt="CI/CD status">
       <img src="https://github.com/dineshsonachalam/tech-courses-search-engine/actions/workflows/k8-deploy.yml/badge.svg" />
@@ -21,12 +18,12 @@
   </a>
 </p>
  
-## Demo video:
+## Demo video
 https://user-images.githubusercontent.com/12673979/117389661-507f8400-af0a-11eb-95e5-f7ef1dee6ac6.mov
 
-### Start the application:
+### Start the application
 ```
 sh dev-startup.sh
 ```
-**Todo:**
+**Todo**
 1. Add py test pdf and cypress video report in ci artifacts.

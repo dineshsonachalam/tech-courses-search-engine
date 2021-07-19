@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { number, string, func, oneOfType, bool, oneOf } from 'prop-types';
-import { Popover } from 'antd';
-import throttle from 'lodash.throttle';
+import React, { useEffect, useState } from "react";
+import { number, string, func, oneOfType, bool, oneOf } from "prop-types";
+import { Popover } from "antd";
+import throttle from "lodash.throttle";
 
 const ResponsiveAntMenu = (props) => {
     const {
@@ -18,14 +18,14 @@ const ResponsiveAntMenu = (props) => {
     useEffect(() => {
         setViewportWidth(window.innerWidth);
         const throttledSetViewPortWidth = throttle(() => setViewportWidth(window.innerWidth));
-        window.addEventListener('resize', throttledSetViewPortWidth);
+        window.addEventListener("resize", throttledSetViewPortWidth);
 
-        return () => window.removeEventListener('resize', throttledSetViewPortWidth);
+        return () => window.removeEventListener("resize", throttledSetViewPortWidth);
     }, []);
 
     const MenuMarkupConfig = {
-        theme: !theme ? 'dark' : typeof theme === 'function' ? theme(isMobile()) : theme,
-        mode: !mode ? 'horizontal' : typeof mode === 'function' ? mode(isMobile()) : mode,
+        theme: !theme ? "dark" : typeof theme === "function" ? theme(isMobile()) : theme,
+        mode: !mode ? "horizontal" : typeof mode === "function" ? mode(isMobile()) : mode,
         selectedKeys: [`${activeLinkKey}`],
         className,
     };
@@ -57,14 +57,14 @@ ResponsiveAntMenu.propTypes = {
     ]),
     mobileMenuContent: func.isRequired,
     menuClassName: string,
-    popoverTrigger: oneOf(['click', 'hover', 'focus'])
+    popoverTrigger: oneOf(["click", "hover", "focus"])
 };
 
 ResponsiveAntMenu.defaultProps = {
     mobileBreakPoint: 575,
-    placement: 'bottom',
+    placement: "bottom",
     closeOnClick: true,
-    popoverTrigger: 'click',
+    popoverTrigger: "click",
 };
 
 export default ResponsiveAntMenu;
