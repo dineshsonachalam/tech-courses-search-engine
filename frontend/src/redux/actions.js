@@ -10,7 +10,7 @@ export const updateAutoCompleteOptions = (autocomplete_options) => {
               payload: {
                 autocomplete_options: autocomplete_options
               }
-    }
+    };
 };
 
 export const updateSearchQuery = (search_query) => {
@@ -19,7 +19,7 @@ export const updateSearchQuery = (search_query) => {
             payload: {
               search_query: search_query
             }
-  }
+  };
 };
 
 export const updateSearchResults = (search_results) => {
@@ -28,6 +28,6 @@ export const updateSearchResults = (search_results) => {
             payload: {
               search_results: search_results
             }
-  }
+  };
 };
 

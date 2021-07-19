@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveAntMenu from "./ResponsiveAntMenu"
+import ResponsiveAntMenu from "./ResponsiveAntMenu";
 import { Menu } from "antd";
 
 const Nav = () => (

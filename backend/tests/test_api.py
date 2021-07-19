@@ -1,8 +1,8 @@
 import requests
 
 def test_autocomplete():
-    url = 'http://0.0.0.0:8000/autocomplete?query=kubernetes'
-    response = requests.request("GET", url, headers={}, data={})    
+    url = "http://0.0.0.0:8000/autocomplete?query=kubernetes"
+    response = requests.request("GET", url, headers={}, data={})
     assert response.status_code == 200
     response = response.json()
     expected_response = [
@@ -28,8 +28,8 @@ def test_autocomplete():
     print(all([a == b for a, b in zip(response, expected_response)]))
 
 def test_string_query_search():
-    url = 'http://0.0.0.0:8000/string-query-search?query=react' 
-    response = requests.request("POST", url, headers={}, data={}) 
+    url = 'http://0.0.0.0:8000/string-query-search?query=react'
+    response = requests.request("POST", url, headers={}, data={})
     assert response.status_code == 200
     response = response.json()
     expected_response = [
