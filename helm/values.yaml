@@ -19,8 +19,3 @@ searchFrontend:
     containerPort: 3000   
     appName: search-frontend
     ingressRoute: (Host(`search.dineshsonachalam.com`))
-
-
-
-
-
