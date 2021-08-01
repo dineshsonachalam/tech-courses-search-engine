@@ -1491,10 +1491,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@microlink/mql@~0.9.3":
-  version "0.9.3"
-  resolved "https://registry.npmjs.org/@microlink/mql/-/mql-0.9.3.tgz"
-  integrity sha512-LBwEtp4s5QYGlPSjziJbubD7nuESKZ9TgNfBm1X6ptXbq+eDzbBqUAxkFikKnzaX2Cede3YR0OknJG0lf7w5cg==
+"@microlink/mql@~0.9.5":
+  version "0.9.8"
+  resolved "https://registry.yarnpkg.com/@microlink/mql/-/mql-0.9.8.tgz#ade8072d2194c80f6ba82a1b34d6649c34a2fc9d"
+  integrity sha512-CVHdmBI7796sxY6ARccPxo7z9PxKLsOW3LnYA2Pi4cvMi0qqKOA8VG9QoI399yrWSbH2WniiiFGOe0cW3WmjSQ==
   dependencies:
     flattie "~1.1.0"
     got "~11.8.2"
@@ -1502,12 +1502,12 @@
     qss "~2.0.3"
     whoops "~4.1.0"
 
-"@microlink/react@^5.5.5":
-  version "5.5.5"
-  resolved "https://registry.npmjs.org/@microlink/react/-/react-5.5.5.tgz"
-  integrity sha512-2UOGDgWxwO55KC5Cd8xtmqVqYes3xYa394yEJ10fz522/rVGPKOKrRSjFJ8EWWp27laGfmvojmbCpKi0Q6f4XQ==
+"@microlink/react@^5.5.6":
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/@microlink/react/-/react-5.5.6.tgz#ffaf41aab08265581b776403a1471161b952999f"
+  integrity sha512-bbC7Z7i6S38wWNGqNjpnKnUP685/a/hR+UhnJpggT/Doe+D6jQ+jRpnWnJDfPHaurNMFnxgF5DKvyUcXedVIFg==
   dependencies:
-    "@microlink/mql" "~0.9.3"
+    "@microlink/mql" "~0.9.5"
     is-localhost-url "~1.0.3"
     nanoclamp "~1.4.1"
 
