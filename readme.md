@@ -33,6 +33,3 @@ https://user-images.githubusercontent.com/12673979/117389661-507f8400-af0a-11eb-
 ```sh
 sh dev-startup.sh
 ```
-**Todo**
-
-1. Add py test pdf and cypress video report in ci artifacts.
