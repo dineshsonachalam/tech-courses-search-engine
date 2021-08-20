@@ -20,7 +20,7 @@
     "react-tiny-link": "^3.6.1",
     "redux": "^4.0.5",
     "styled-components": "^5.2.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "env-cmd -f .env.dev react-scripts start",
