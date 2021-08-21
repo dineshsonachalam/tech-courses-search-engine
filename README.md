@@ -41,7 +41,6 @@ This project showcases how to build real-time search engines like Google, Course
 4. Building UI using React and Redux.
 5. Testing our UI using Cypress.
 6. Add SonarQube Quality gate to your application.
-7. Deploy our application in the Kubernetes cluster using the Helm chart. 
 
 #### 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
 
@@ -99,18 +98,18 @@ Elasticsearch allows you to make one or more copies of your index’s shards whi
 
 **How to implement Autocompletion ElasticSearch feature?**
 
-1. Start ElasticSearch docker container
+1. Start ElasticSearch Docker container
 ```
 mkdir -p ES_DATA && docker run -v $(pwd)/ES_DATA:/usr/share/elasticsearch/data -e "discovery.type=single-node" -e "ES_JAVA_OPTS=-Xms750m -Xmx750m" -p 9200:9200 elasticsearch:7.12.0 
 ```
 
-2. Verify health status of a cluster.
+2. Verify the health status of your cluster.
 ```
 dineshsonachalam@macbook ~ % curl --location --request GET 'http://elasticsearch:9200/_cat/health'
 1629473241 15:27:21 docker-cluster green 1 1 0 0 0 0 0 0 - 100.0%
 ```
 
-3.  Create an index template that contains the following properties topic, title, URL, labels and upvotes.
+3. Create an index template that contains the following properties topic, title, URL, labels, and upvotes.
 ```
 curl -X PUT "elasticsearch:9200/_index_template/template_1?pretty" -H 'Content-Type: application/json' \
 -d'{
@@ -192,5 +191,114 @@ dineshsonachalam@macbook ~ % curl --location --request GET 'http://elasticsearch
 }
 ```
 
+5. Create a new index called cs.stanford
+```
+dineshsonachalam@macbook ~ % curl --location --request PUT 'http://elasticsearch:9200/cs.stanford/'
+{
+    "acknowledged": true,
+    "shards_acknowledged": true,
+    "index": "cs.stanford"
+}
+```
 
-WIP: Work in Progress
+6. Validate if the cs.stanford index is available.
+```
+dineshsonachalam@macbook ~ % curl --location --request GET 'http://elasticsearch:9200/cs.stanford/'
+{
+    "cs.stanford": {
+        "aliases": {},
+        "mappings": {
+            "properties": {
+                "labels": {
+                    "type": "text"
+                },
+                "title": {
+                    "type": "completion",
+                    "analyzer": "simple",
+                    "preserve_separators": true,
+                    "preserve_position_increments": true,
+                    "max_input_length": 50
+                },
+                "topic": {
+                    "type": "text"
+                },
+                "upvotes": {
+                    "type": "integer"
+                },
+                "url": {
+                    "type": "text"
+                }
+            }
+        },
+        "settings": {
+            "index": {
+                "routing": {
+                    "allocation": {
+                        "include": {
+                            "_tier_preference": "data_content"
+                        }
+                    }
+                },
+                "number_of_shards": "1",
+                "provided_name": "cs.stanford",
+                "creation_date": "1629526849180",
+                "number_of_replicas": "1",
+                "uuid": "NrvQ6juOSNmf0GOPO2QADA",
+                "version": {
+                    "created": "7120099"
+                }
+            }
+        }
+    }
+}
+```
+
+7. Add documents to cs.stanford index.
+```
+cd backend && python -c 'from utils.elasticsearch import Elasticsearch; es = Elasticsearch("cs.stanford"); es.add_documents()' && cd ..
+```
+
+8. Get the total count of the documents in cs.stanford index. We can able to see that the document count is 1350.
+```
+dineshsonachalam@macbook tech-courses-search-engine % curl --location --request GET 'http://elasticsearch:9200/cs.stanford/_count'
+{
+    "count": 1350,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    }
+}
+```
+
+9. Use ElasticSearch suggesters search for autocompletion. The suggest feature suggests similar looking terms based on a provided text by using a suggester.
+
+```
+dineshsonachalam@macbook tech-courses-search-engine % cd backend && python -c 'from utils.filters import SearchFilters; search = SearchFilters("cs.stanford"); print(search.autocomplete(query="python"))' && cd ..
+[
+    {
+        "id": 1,
+        "value": "Python Data Science Handbook"
+    },
+    {
+        "id": 2,
+        "value": "Python Game Programming Tutorial: SpaceWar"
+    },
+    {
+        "id": 3,
+        "value": "Python for Beginners - Learn Python Programming La"
+    },
+    {
+        "id": 4,
+        "value": "Python for Data Science and Machine Learning Bootc"
+    },
+    {
+        "id": 5,
+        "value": "Python for Security Professionals"
+    }
+]
+```
+
+
+

@@ -21,8 +21,8 @@ app.add_middleware(
 )
 
 
-search = SearchFilters()
-es = Elasticsearch()
+search = SearchFilters(index="cs.stanford")
+es = Elasticsearch(index="cs.stanford")
 
 @app.get("/autocomplete")
 async def autocomplete(query: str = ""):

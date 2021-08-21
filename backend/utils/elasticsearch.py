@@ -4,12 +4,12 @@ import json
 import csv
 
 class Elasticsearch:
-    def __init__(self):
+    def __init__(self, index):
         self.cluster_health_url = "http://elasticsearch:9200/_cluster/health"
         self.index_template_url = "http://elasticsearch:9200/_index_template/template_1"
-        self.index_url = "http://elasticsearch:9200/cs.stanford/"
-        self.index_doc_count_url = "http://elasticsearch:9200/cs.stanford/_count"
-        self.index_doc_url = "http://elasticsearch:9200/cs.stanford/_doc/"
+        self.index_url = f"http://elasticsearch:9200/{index}/"
+        self.index_doc_count_url = f"http://elasticsearch:9200/{index}/_count"
+        self.index_doc_url = f"http://elasticsearch:9200/{index}/_doc/"
         self.headers = {
                     'Content-Type': 'application/json'
         }
@@ -113,8 +113,7 @@ class Elasticsearch:
                         print("Indexed document: {}".format(response["_seq_no"]+1))
 
     def pre_condition_check(self):
-        health_check_result = self.es_healthcheck()
-        if(health_check_result == True):
+        if(self.es_healthcheck()):
             self.create_es_index()
             self.add_documents()
             total_doc = self.es_record_count()

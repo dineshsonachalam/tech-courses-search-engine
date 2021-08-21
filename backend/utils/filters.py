@@ -1,8 +1,8 @@
 import requests
 import json
 class SearchFilters:
-    def __init__(self):
-        self.url = "http://elasticsearch:9200/cs.stanford/_search"
+    def __init__(self, index):
+        self.url = f"http://elasticsearch:9200/{index}/_search"
         self.headers = {
                     'Content-Type': 'application/json'
         }
