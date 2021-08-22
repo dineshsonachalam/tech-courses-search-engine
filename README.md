@@ -48,7 +48,7 @@ This project showcases how to build real-time search engines like Google, Course
 
 ## 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
 
-What is ElasticSearch?
+**What is ElasticSearch?**
 
 Free and Open, Distributed, RESTful Search Engine. You can use Elasticsearch to store, search, and manage data for:
 
