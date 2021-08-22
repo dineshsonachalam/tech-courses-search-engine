@@ -37,10 +37,9 @@ This project showcases how to build real-time search engines like Google, Course
 
 - [x] [1. Understanding all significant components in ElasticSearch and its Auto completion feature.](#1-understanding-all-significant-components-in-elasticsearch-and-its-auto-completion-feature)
 - [x] [2. Building an API service that interacts with ElasticSearch to be used by the UI.](#2-building-an-api-service-that-interacts-with-elasticsearch-to-be-used-by-the-ui)
-- [x] [3. Testing our API using Pytest.](#3-testing-our-api-using-pytest)
-- [ ] [4. Building UI using React and Redux.]()
-- [ ] [5. Testing our UI using Cypress.]()
-- [ ] [6. Add SonarQube Quality gate to your application.]()
+- [x] [3. Testing API using Pytest.](#3-testing-api-using-pytest)
+- [x] [4. Building UI using React and Redux.](#4-building-ui-using-react-and-redux)
+- [ ] [5. Testing UI using Cypress.]()
 
 ## 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
 
@@ -479,7 +478,7 @@ dineshsonachalam@macbook ~ % curl --location --request POST 'elasticsearch:8000/
 ]
 ```
 
-## 3. Testing our API using Pytest
+## 3. Testing API using Pytest
 
 Pytest is a testing framework based on python. It is mainly used to write API based test cases. Here we are going to test our two API's (autocomplete and string-query-search).
 
