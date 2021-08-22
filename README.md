@@ -39,7 +39,12 @@ This project showcases how to build real-time search engines like Google, Course
 - [x] [2. Building an API service that interacts with ElasticSearch to be used by the UI.](#2-building-an-api-service-that-interacts-with-elasticsearch-to-be-used-by-the-ui)
 - [x] [3. Testing API using Pytest.](#3-testing-api-using-pytest)
 - [x] [4. Building UI using React and Redux.](#4-building-ui-using-react-and-redux)
-- [ ] [5. Testing UI using Cypress.]()
+- [x] [5. Testing UI using Cypress.](#5-testing-ui-using-cypress)
+
+## Application Architecture
+
+<img src="https://user-images.githubusercontent.com/12673979/117518002-c0017c00-afbb-11eb-97f3-14c253cad321.png"/>
+<img src="https://user-images.githubusercontent.com/12673979/117521109-ae26d580-afc9-11eb-8dbd-663eeabaf0ff.png"/>
 
 ## 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
 
@@ -621,3 +626,7 @@ All your successful assertions will show in Green and failed assertions in Red.
 
 <img src="https://i.imgur.com/F97ooaD.png"/>
 <img src="https://i.imgur.com/jfmBLuk.png"/>
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/) © [dineshsonachalam](https://www.github.com/dineshsonachalam)
