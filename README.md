@@ -35,12 +35,12 @@
 
 This project showcases how to build real-time search engines like Google, Coursera, Medium, etc. We focus on the following aspects as part of this project.
 
-- [x] 1. Understanding all significant components in ElasticSearch and its Auto completion feature.
-- [ ] 2. Building an API service that interacts with ElasticSearch to be used by the UI.
-- [ ] 3. Testing our API using Pytest.
-- [ ] 4. Building UI using React and Redux.
-- [ ] 5. Testing our UI using Cypress.
-- [ ] 6. Add SonarQube Quality gate to your application.
+- [x] [1. Understanding all significant components in ElasticSearch and its Auto completion feature.](#1-understanding-all-significant-components-in-elasticsearch-and-its-auto-completion-feature)
+- [ ] [2. Building an API service that interacts with ElasticSearch to be used by the UI.]()
+- [ ] [3. Testing our API using Pytest.]()
+- [ ] [4. Building UI using React and Redux.]()
+- [ ] [5. Testing our UI using Cypress.]()
+- [ ] [6. Add SonarQube Quality gate to your application.]()
 
 #### 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
 
