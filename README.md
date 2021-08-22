@@ -36,13 +36,13 @@
 This project showcases how to build real-time search engines like Google, Coursera, Medium, etc. We focus on the following aspects as part of this project.
 
 - [x] [1. Understanding all significant components in ElasticSearch and its Auto completion feature.](#1-understanding-all-significant-components-in-elasticsearch-and-its-auto-completion-feature)
-- [x] [2. Building an API service that interacts with ElasticSearch to be used by the UI.]()
+- [x] [2. Building an API service that interacts with ElasticSearch to be used by the UI.](#2-building-an-api-service-that-interacts-with-elasticsearch-to-be-used-by-the-ui)
 - [ ] [3. Testing our API using Pytest.]()
 - [ ] [4. Building UI using React and Redux.]()
 - [ ] [5. Testing our UI using Cypress.]()
 - [ ] [6. Add SonarQube Quality gate to your application.]()
 
-#### 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
+## 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
 
 What is ElasticSearch?
 
@@ -300,7 +300,7 @@ dineshsonachalam@macbook tech-courses-search-engine % cd backend && python -c 'f
 ]
 ```
 
-#### 2. Building an API service that interacts with ElasticSearch to be used by the UI.
+## 2. Building an API service that interacts with ElasticSearch to be used by the UI.
 
 1. Start the ElasticSearch, Backend and Frontend services
 ```

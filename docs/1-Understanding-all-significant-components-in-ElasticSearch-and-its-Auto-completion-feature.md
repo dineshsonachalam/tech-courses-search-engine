@@ -1,4 +1,4 @@
-#### 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
+## 1. Understanding all significant components in ElasticSearch and it's Auto completion feature.
 
 What is ElasticSearch?
 

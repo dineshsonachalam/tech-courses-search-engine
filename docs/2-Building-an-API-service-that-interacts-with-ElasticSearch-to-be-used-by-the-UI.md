@@ -1,4 +1,4 @@
-#### 2. Building an API service that interacts with ElasticSearch to be used by the UI.
+## 2. Building an API service that interacts with ElasticSearch to be used by the UI.
 
 1. Start the ElasticSearch, Backend and Frontend services
 ```
