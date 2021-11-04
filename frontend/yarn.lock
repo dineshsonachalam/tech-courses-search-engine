@@ -1491,23 +1491,23 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@microlink/mql@~0.9.3":
-  version "0.9.3"
-  resolved "https://registry.npmjs.org/@microlink/mql/-/mql-0.9.3.tgz"
-  integrity sha512-LBwEtp4s5QYGlPSjziJbubD7nuESKZ9TgNfBm1X6ptXbq+eDzbBqUAxkFikKnzaX2Cede3YR0OknJG0lf7w5cg==
+"@microlink/mql@~0.10.0":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@microlink/mql/-/mql-0.10.4.tgz#a96cbcf41dc9d18b45336baabcc1467abfee7e7b"
+  integrity sha512-zHdQy72SHqmpGwEDXrM3iOfMGI3bIpk+Ak7oXEGpKIM/Rbq+6HSXWwqXvqpfdn+ZMHAmgMaXPuARuMDZsWqCyA==
   dependencies:
     flattie "~1.1.0"
     got "~11.8.2"
-    is-url-http "~2.2.3"
+    is-url-http "~2.2.4"
     qss "~2.0.3"
     whoops "~4.1.0"
 
-"@microlink/react@^5.5.5":
-  version "5.5.5"
-  resolved "https://registry.npmjs.org/@microlink/react/-/react-5.5.5.tgz"
-  integrity sha512-2UOGDgWxwO55KC5Cd8xtmqVqYes3xYa394yEJ10fz522/rVGPKOKrRSjFJ8EWWp27laGfmvojmbCpKi0Q6f4XQ==
+"@microlink/react@^5.5.7":
+  version "5.5.7"
+  resolved "https://registry.yarnpkg.com/@microlink/react/-/react-5.5.7.tgz#112a452ca814ea0c136fdc252ca58203e3d3185b"
+  integrity sha512-CckNdYS0pPoJE0Tu91CWvg8BXintHS3DCDqsUft1Jw87eMUVuGtyyDmNmVEDKUa3r7WToy+F5QxCNjXP7YDQ9A==
   dependencies:
-    "@microlink/mql" "~0.9.3"
+    "@microlink/mql" "~0.10.0"
     is-localhost-url "~1.0.3"
     nanoclamp "~1.4.1"
 
@@ -6871,10 +6871,10 @@ is-unicode-supported@^0.1.0:
   resolved "https://registry.npmjs.org/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz"
   integrity sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==
 
-is-url-http@~2.2.3:
-  version "2.2.3"
-  resolved "https://registry.npmjs.org/is-url-http/-/is-url-http-2.2.3.tgz"
-  integrity sha512-/GcPo4TPWnrt248Tujz71UgZa3+75EaGo2J+e2UhTbyx5Du77c03vievbYQxj4ZqXH/wqxr/rN8z/AekR57jIg==
+is-url-http@~2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/is-url-http/-/is-url-http-2.2.4.tgz#5d34e9fba08350c3182055247149a2fea02428d4"
+  integrity sha512-Q+49tFsGdxDYqJBlsx5WwlcquKviTeAzHZWpC+eGPa+yquAoNBiO75579dinDoZ3z8ni9/EhzhFHL3jNpjwjGQ==
   dependencies:
     url-regex-safe "~2.0.2"
 
