@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: elasticsearch # Service Name
+spec:
+    type: ClusterIP # Service Type
+    ports:
+    - targetPort: 9200 # 1. Pod port: Port that you're allowing in the Pod
+      port: 5001       # 2. Service port: Port that you're allowing in the Service
+    selector:
+        app: search-app
+        type: es

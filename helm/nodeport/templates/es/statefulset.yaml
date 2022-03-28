@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+    name: es-statefulset # StatefulSet Name
+    labels:                  # Labels Name
+        app:  search-app
+        type: es
+spec:
+    template: 
+        metadata:
+            name: es-pod     # Pod Name
+            labels:               # Labels Name
+                app:  search-app
+                type: es
+        spec:
+            containers:
+            - name:  search-app-es  # Docker Image Name
+              image: docker.elastic.co/elasticsearch/elasticsearch:8.1.1
+              ports:
+                - containerPort: 9200    # Docker Container Port
+              volumeMounts:
+                - name: es-data
+                  mountPath: /usr/share/elasticsearch/data
+    volumeClaimTemplates:
+    - metadata:
+        name: es-data
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        storageClassName: "es-sc"
+        resources:
+            requests:
+                storage: 5Gi
+    replicas: 2
+    selector:
+        matchLabels:           # Labels Name
+            app: search-app
+            type: es
+    serviceName: "elasticsearch"

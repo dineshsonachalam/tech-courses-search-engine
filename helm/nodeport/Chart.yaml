@@ -1,0 +1,6 @@
+apiVersion: v2
+version: 0.0.1
+description: Helm chart for tech-course-search-engine
+name: tech-courses-search-engine
+maintainers:
+  - name: Dinesh Sonachalam (dineshsonachalam@gmail.com)

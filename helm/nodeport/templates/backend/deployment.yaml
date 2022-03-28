@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: backend-deployment # Deployment Name
+    labels:                  # Labels Name
+        app:  search-app
+        type: backend
+spec:
+    template: 
+        metadata:
+            name: backend-pod     # Pod Name
+            labels:               # Labels Name
+                app:  search-app
+                type: backend
+        spec:
+            containers:
+            - name:  search-app-backend  # Docker Image Name
+              image: dineshsonachalam/tech-courses-search-engine-backend:latest
+              ports:
+                - containerPort: 8000    # Docker Container Port
+    replicas: 2
+    selector:
+        matchLabels:           # Labels Name
+            app: search-app
+            type: backend

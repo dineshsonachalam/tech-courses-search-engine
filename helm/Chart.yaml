@@ -1,6 +1,0 @@
-apiVersion: v2
-appVersion: "1.0"
-description: Helm chart for tech-course-search engine app
-name: tech-courses-search-engine
-owner: dineshsonachalam
-version: 0.1.0
