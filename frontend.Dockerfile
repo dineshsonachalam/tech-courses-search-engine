@@ -1,4 +1,4 @@
-FROM node:16.6.0-slim
+FROM node:gallium-slim
 
 # Create app directory
 WORKDIR /usr/src/app
