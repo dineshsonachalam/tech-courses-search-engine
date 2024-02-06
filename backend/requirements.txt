@@ -1,5 +1,5 @@
 uvicorn==0.13.4
 requests==2.25.1
-fastapi==0.65.2
+fastapi==0.109.1
 pytest==6.2.4
 pytest-cov==2.12.1
